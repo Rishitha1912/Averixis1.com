@@ -1,0 +1,19 @@
+name: Echo Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Step 1
+        run: echo "This is step 1"
+
+      - name: Echo Step 2
+        run: echo "This is step 2"
+
+      - name: Echo Step 3
+        run: echo "This is step 3"
